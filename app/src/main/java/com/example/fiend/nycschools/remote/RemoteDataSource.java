@@ -13,13 +13,8 @@ import retrofit2.converter.gson.GsonConverterFactory;
 import retrofit2.http.GET;
 import retrofit2.http.Query;
 
-/**
- * Created by user on 8/17/17.
- */
-
 public class RemoteDataSource {
 
-    //https://data.cityofnewyork.us/resource/734v-jeq5.json?dbn=01M292
     public static final String BASE_URL = "https://data.cityofnewyork.us/";
     public static final String PATH = "resource/97mf-9njv.json";
 

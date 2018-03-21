@@ -8,23 +8,16 @@ import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.ScaleAnimation;
 import android.widget.TextView;
-
 import com.example.fiend.nycschools.R;
 import com.example.fiend.nycschools.model.NYCSchool;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
-
-/**
- * Created by user on 8/17/17.
- */
 
 public class SchoolViewAdapter extends RecyclerView.Adapter<SchoolViewAdapter.ViewHolder> {
 
     private final onClickListener listener;
     List<NYCSchool> items = new ArrayList<>();
-    //List<NYCSchoolScore> satScore = new ArrayList<>();
     private int lastPosition = -1;
     Context context;
 
@@ -36,10 +29,6 @@ public class SchoolViewAdapter extends RecyclerView.Adapter<SchoolViewAdapter.Vi
     public void setList(List<NYCSchool> itemList) {
         this.items = itemList;
     }
-
-//    public void setListScores(List<NYCSchoolScore> listScores) {
-//        this.satScore = listScores;
-//    }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
 
@@ -69,7 +58,6 @@ public class SchoolViewAdapter extends RecyclerView.Adapter<SchoolViewAdapter.Vi
     public void onBindViewHolder(final ViewHolder holder, int position) {
 
         final NYCSchool school = items.get(position);
-        //final NYCSchoolScore satScores = satScore.get(position);
         holder.textViewName.setText(school.getSchoolName());
         holder.textViewAddress.setText(school.getPrimaryAddressLine1());
         holder.textViewZipCode.setText(school.getZip());
@@ -81,7 +69,6 @@ public class SchoolViewAdapter extends RecyclerView.Adapter<SchoolViewAdapter.Vi
             @Override
             public void onClick(final View v) {
                 listener.onSchoolSelected(school);
-
             }
         });
 

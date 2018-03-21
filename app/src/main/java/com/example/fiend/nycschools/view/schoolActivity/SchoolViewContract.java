@@ -13,13 +13,10 @@ public interface SchoolViewContract {
     interface View extends BaseView {
         void onListUpdated(List<NYCSchool> item);
         void sendSatScores(List<NYCSchoolScore> scores);
-
     }
-
 
     interface Presenter extends BasePresenter<View> {
         void showSchoolList();
         void getSatScores(String dbn);
-
     }
 }
