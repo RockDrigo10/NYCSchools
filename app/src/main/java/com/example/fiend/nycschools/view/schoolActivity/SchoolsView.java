@@ -22,7 +22,6 @@ public class SchoolsView extends AppCompatActivity implements SchoolViewContract
     RecyclerView.ItemAnimator itemAnimator;
     SchoolViewPresenter presenter;
     private List<NYCSchool> itemList = new ArrayList<>();
-    private List<NYCSchoolScore> satScore = new ArrayList<>();
     private SchoolViewAdapter schoolViewAdapter;
 
     @Override
