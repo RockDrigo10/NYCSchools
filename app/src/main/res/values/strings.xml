@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">NYCSchools</string>
+    <string name="school_name">School Name</string>
+    <string name="school">School:</string>
+    <string name="address">Address:</string>
+    <string name="school_address">This is the address</string>
+    <string name="zipcode">ZipCode:</string>
+    <string name="school_zip_code">School zip code</string>
+    <string name="website">Website:</string>
+    <string name="school_web_site">School website</string>
+    <string name="school_email">School Email</string>
+    <string name="email">Email:</string>
+    <string name="total_students">Total Students:</string>
+    <string name="school_total_students">School total students</string>
+    <string name="no_sat_score_records">No SAT score records!</string>
+    <string name="reading">Reading:</string>
+    <string name="writing">Writing:</string>
+</resources>
